@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sélectionner un Contact WhatsApp</title>
+    <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+    <header>
+        <h1>Sélectionner un Contact WhatsApp</h1>
+        <input type="text" id="search-bar" placeholder="Rechercher un contact..." onkeyup="searchContacts()">
+    </header>
+    <main>
+        <section id="contact-list">
+            <div class="contact" data-name="Chez le chef restaurant" data-number="2250707070707" onclick="selectContact('2250707070707')">
+                <img src="Le chef.jpg" alt="Photo de Personne 1">
+                <div class="contact-info">
+                    <h2>Chez le chef</h2>
+                    <p>+225 07 49 03 33 33</p>
+                </div>
+            </div>
+            <div class="contact" data-name="Toi" data-number="2250808080808" onclick="selectContact('2250808080808')">
+                <img src="https://via.placeholder.com/100" alt="Photo de Personne 2">
+                <div class="contact-info">
+                    <h2>Toi</h2>
+                    <p>+225 08 08 08 08 08</p>
+                </div>
+            </div>
+            <div class="contact" data-name="Lui" data-number="2250909090909" onclick="selectContact('2250909090909')">
+                <img src="https://via.placeholder.com/100" alt="Photo de Personne 3">
+                <div class="contact-info">
+                    <h2>Lui</h2>
+                    <p>+225 09 09 09 09 09</p>
+                </div>
+            </div>
+            <!-- Ajoutez plus de contacts ici -->
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Sélection Contact WhatsApp. Tous droits réservés.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
